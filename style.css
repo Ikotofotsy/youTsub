@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    padding: 10px 20px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav img:not(button img){
+    width: 25px;
+    margin: 0 10px;
+}
+form{
+    display: flex;
+}
+
+.nav-middle input{
+    border: 1px solid #ccc;
+    width: 460px;
+    height: 50px;
+    padding: 10px;
+    outline: 0;
+}
+.nav-middle button{
+    width: 60px;
+    height: 50px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solide #ccc;
+    border-radius: 0;
+}
+.nav-middle button img{
+    width: 80%;
+    margin: auto;
+}

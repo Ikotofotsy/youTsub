@@ -5,13 +5,17 @@
     font-family: 'poppins';
 }
 
+body{
+    background-color: #f7f7f7;
+}
+
 .flex-div{
     display: flex;
     align-items: center;
 }
 
 nav{
-    padding: 10px 20px;
+    padding: 0 20px;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
@@ -20,30 +24,113 @@ nav{
     z-index: 10;
 }
 
-nav img:not(button img){
+nav img:not(button img,.nav-left img:nth-child(2)){
     width: 25px;
     margin: 0 10px;
+}
+.nav-left img:nth-child(2){
+    width: 60px;
+    height: auto;
 }
 form{
     display: flex;
 }
 
 .nav-middle input{
-    border: 1px solid #ccc;
+    border: 1px solid #f7f7f7;
     width: 460px;
-    height: 50px;
+    height: 40px;
     padding: 10px;
     outline: 0;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
 .nav-middle button{
     width: 60px;
-    height: 50px;
+    height: 40px;
     padding: 10px;
     outline: 0;
-    border: 1px solide #ccc;
-    border-radius: 0;
+    background-color: #f7f7f7;
+    border: 0;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 .nav-middle button img{
-    width: 80%;
+    width: 60%;
     margin: auto;
+}
+.side-bar{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    padding-left: 40px;
+    overflow: auto;
+    scrollbar-color: #ccc;
+    scrollbar-width: 5px;
+    scro
+}
+
+.shortcuts-link{
+    display: flex;
+    flex-direction: column;
+}
+.side-bar a{
+    display: flex;
+    color: #666;
+    text-decoration:none;
+    align-items: center;
+}
+h3{
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+}
+.shortcuts-link img{
+    width: 25px;
+    margin: 10px 0px;
+    margin-right: 20px;
+}
+.cadre{
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.subscriber .cadre1{
+    background-image: url(img/jeune-jolie-femme-heureuse-souriante-portant-chemisier-blanc-assis-contre-mur-chapeau-paille.jpg);
+    
+}
+.subscriber .cadre2{
+    background-image: url(img/portrait-beau-modele-hipster-souriant-homme-africain-mal-rase-vetu-t-shirt-ete-blanc-jean-mode-masculine-coiffure-dreadlocks-posant-fond-rue.jpg);
+    
+}
+.subscriber .cadre3{
+    background-image: url(img/belle-jeune-femme-regardant-camera-fille-mode-t-shirt-blanc-ete-decontracte-short-jean-femelle-positive-montre-emotions-faciales-modele-drole-isole-jaune.jpg);
+}
+.cadre_profil{
+    background: url(img/pic_fond_uni.jpg);
+    border: 1px solid #ccc;
+}
+.subscriber img{
+    width:100%
+}
+
+hr{
+    display: block;
+    margin: 10px;
+    width: 70%;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+.court-nav{
+    width: 70px;   
+    padding: 0 30px;
+}
+.cacher-h3{
+    color: white;
 }
